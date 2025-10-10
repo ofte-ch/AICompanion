@@ -1,18 +1,17 @@
 package ch.ofte.aicompanion.server.ai;
 
-import ch.ofte.aicompanion.server.ai.dto.PromptRequest;
-import ch.ofte.aicompanion.server.ai.internal.AIServiceExecutor;
-import lombok.AllArgsConstructor;
-import lombok.RequiredArgsConstructor;
+import java.util.HashMap;
+import java.util.Map;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Service;
+import reactor.core.publisher.Flux;
 
-import java.util.HashMap;
-import java.util.Map;
+import ch.ofte.aicompanion.server.ai.dto.PromptRequest;
+import ch.ofte.aicompanion.server.ai.internal.AIServiceExecutor;
 
 @Service("aiService")
 public class AIServiceImpl implements AIService {
@@ -46,5 +45,15 @@ public class AIServiceImpl implements AIService {
     @Override
     public String getResponseFromRequest(PromptRequest request) {
         return getModelExecutor(request.getModel()).getResponseFromRequest(request);
+    }
+
+    @Override
+    public Flux<?> getStreamingResponseFromRequest(PromptRequest request) {
+        return getModelExecutor(request.getModel()).getStreamingResponseFromRequest(request);
+    }
+
+    @Override
+    public Flux<?> getStreamingResponseFromRequestAsChunks(PromptRequest request) {
+        return getModelExecutor(request.getModel()).getStreamingResponseFromRequestAsChunks(request);
     }
 }
