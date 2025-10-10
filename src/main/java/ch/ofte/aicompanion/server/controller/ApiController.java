@@ -1,4 +1,4 @@
-package ch.ofte.mplayer.server.controller;
+package ch.ofte.aicompanion.server.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

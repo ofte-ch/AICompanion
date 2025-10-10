@@ -1,6 +1,4 @@
-package ch.ofte.mplayer.server.music;
-
-import java.math.BigInteger;
+package ch.ofte.aicompanion.server.music;
 
 public interface MusicService {
     int addNewMusic();

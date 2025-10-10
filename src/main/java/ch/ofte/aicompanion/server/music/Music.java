@@ -1,4 +1,4 @@
-package ch.ofte.mplayer.server.music;
+package ch.ofte.aicompanion.server.music;
 
 import java.time.LocalDate;
 import jakarta.persistence.Entity;

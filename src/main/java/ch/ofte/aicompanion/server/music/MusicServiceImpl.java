@@ -1,4 +1,4 @@
-package ch.ofte.mplayer.server.music;
+package ch.ofte.aicompanion.server.music;
 
 import org.springframework.stereotype.Service;
 

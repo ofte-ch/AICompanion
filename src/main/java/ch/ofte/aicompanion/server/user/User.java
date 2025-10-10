@@ -1,4 +1,4 @@
-package ch.ofte.mplayer.server.user;
+package ch.ofte.aicompanion.server.user;
 
 import jakarta.persistence.Entity;
 
