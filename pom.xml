@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>ch.ofte</groupId>
-	<artifactId>MPlayer</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>oftemplayer</name>
-	<description>Yet another music player</description>
+	<artifactId>AICompanion</artifactId>
+	<version>2025.0.1-DEV</version>
+	<name>aicompanion</name>
+	<description>The AI Companion project</description>
 	<url/>
 	<licenses>
 		<license/>
